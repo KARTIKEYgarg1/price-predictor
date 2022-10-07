@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Doc</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../static/style.css" />
+
+    <script>
+      let submitted = false;
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a href="#">M Predictor</a>
+      </div>
+    </nav>
+    <section>
+      <img
+        src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg?w=740&t=st=1665053105~exp=1665053705~hmac=3cc80eb2da172f91cd46ad51ddc3bc13043782ab7bc3072ffd6af4ddb283b8c2"
+      />
+      <div class="w-100 p-3">
+        <form action="#" method="POST">
+          <div class="form-group row">
+            <label for="area" class="col-sm-2 col-form-label">Area</label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                id="area"
+                name="area"
+                max="99990"
+                min="100"
+                step="10"
+                value="{{ar}}"
+                placeholder="Enter area in sqft"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="bedroom" class="col-sm-2 col-form-label">Bedroom</label>
+            <div class="col-sm-10">
+              <input
+                name="bedr"
+                max="5"
+                min="1"
+                value="{{bd}}"
+                type="number"
+                id="bedroom"
+                placeholder="Enter number of bedroom required"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="age" class="col-sm-2 col-form-label">Age</label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                id="age"
+                max="10"
+                value="{{ag}}"
+                min="0"
+                name="age"
+                placeholder="How old is the building?(in years)"
+                required
+              />
+            </div>
+          </div>
+          <input
+            type="submit"
+            class="btn btn-outline-primary"
+            placeholder="Submit"
+            value="Submit"
+          />
+        </form>
+        <span class="result">{{pred}} </span>
+      </div>
+    </section>
+  </body>
+</html>

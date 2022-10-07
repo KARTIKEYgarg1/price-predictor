@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Noto+Sans+Mono:wght@800&family=PT+Serif:ital@1display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: x-large;
+}
+nav {
+  background-color: rgb(37, 205, 235);
+  height: 15vh;
+}
+nav > div {
+  padding: 1%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+nav a {
+  margin-left: auto;
+  margin-right: 1%;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  text-shadow: #fc0 1px 0 10px;
+  font-family: "Alkalami", serif;
+}
+section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+}
+img {
+  width: 50vw;
+  height: 100%;
+}
+.form-group {
+  margin: 50px 0px;
+}
+input[type="number"] {
+  font-family: "PT Serif", serif;
+  margin-top: 3px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+input[type="number"]:focus {
+  border-color: rgb(37, 205, 235);
+}
+.btn-outline-primary {
+  margin-left: auto !important;
+}
+.btn-outline-primary:hover {
+  background-color: rgb(37, 205, 235) !important;
+}
+.result {
+  font-size: xx-large;
+  font-weight: 700;
+  color: blueviolet;
+}
+@media (max-width: 800px) {
+  img {
+    display: none;
+  }
+}
